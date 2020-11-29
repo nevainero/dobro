@@ -1,0 +1,80 @@
+
+// ICON
+
+.social-icon {
+    list-style-type: none;
+    display: inline-block;
+
+    a {
+        background: rgba(#fff, 0.1);
+        border-radius: 50%;
+
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 56px;
+
+        transition: $trans-n-fast;
+
+        &:hover,
+        &:focus {
+            background: rgba(#fff, 0.15);
+        }
+
+    }
+
+    img {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 16px;
+        margin: 0;
+    }
+
+    .social-icons & {
+        margin: 7px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+}
+
+
+
+// LAYOUT
+
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons-left {
+    justify-content: flex-start;
+}
+
+.social-icons-center {
+    justify-content: center;
+}
+
+.social-icons-right {
+    justify-content: flex-end;
+}
+
+.social-icons-justify {
+    justify-content: space-between;
+}
+
+.social-icons-even {
+    justify-content: space-around;
+}

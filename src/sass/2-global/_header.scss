@@ -1,0 +1,160 @@
+.landing-header-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.logo-img {
+    display: block;
+    margin: 0;
+}
+
+.landing-header-hamburger {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -15px;
+
+    flex: 1;
+    flex-basis: 50%;
+}
+
+.hamburger-button {
+    font-family: $ff-basic;
+    font-size: $fz-xxs;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-primary;
+    background: rgba($color-primary, 0.1) url(assets/img/hamburger.svg) no-repeat right 25px center;
+    border: none;
+    border-radius: 99px 0 0 99px;
+
+    padding: 18px 28px;
+    padding-right: 50px;
+
+    transition: $trans-n-medium;
+
+    &:hover, &:focus {
+        outline: none;
+        background-color: rgba($color-primary, 0.2);
+    }
+}
+
+.landing-header-menu {
+    display: none;
+    flex-basis: 100%;
+    width: 100%;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    .landing-header.is-expanded & {
+        display: flex;
+    }
+
+}
+
+.landing-header-login {
+    display: none;
+    flex-basis: 100%;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .button {
+        margin: 5px;
+    }
+
+    .landing-header.is-expanded & {
+        display: flex;
+    }
+}
+
+
+.topmenu-items {
+    padding: 15px 0;
+    margin: 0;
+
+    .menu-item {
+        list-style: none;
+        text-align: center;
+        display: block;
+        padding: 12px;
+        margin: 0;
+
+        a {
+            font-size: $fz-lg;
+            font-weight: bold;
+
+            display: block;
+        }
+    }
+}
+
+
+@include media-breakpoint-up(md){
+
+    .landing-header-hamburger {
+        display: none;
+    }
+
+    .landing-header-menu {
+        display: flex;
+        margin-top: 0;
+    }
+
+    .landing-header-login {
+        display: flex;
+        flex-basis: initial;
+        width: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .topmenu-items {
+        display: flex;
+
+        .menu-item {
+            display: inline-block;
+            padding: 5px 23px;
+            a {
+                font-size: $fz-xs;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+@include media-breakpoint-down(sm){
+
+    .landing-header-logo {
+        flex: 1;
+        flex-basis: 50%;
+    }
+
+    .landing-header-login {
+        flex-direction: column;
+    }
+
+    .landing-header-login-btn {
+        width: 100%;
+        max-width: 420px;
+    }
+    
+    .landing-header-signup-btn {
+        width: 100%;
+        max-width: 420px;
+    }
+
+}

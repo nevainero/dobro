@@ -1,0 +1,114 @@
+
+
+// HEADINGS
+
+%heading {
+    line-height: 1.2;
+}
+
+h1, .h1 {
+    font-size: $fz-1;
+    @extend %heading;
+}
+
+h2, .h2 {
+    font-size: $fz-2;
+    @extend %heading;
+}
+
+h3, .h3 {
+    font-size: $fz-3;
+    @extend %heading;
+}
+
+h4, .h4 {
+    font-size: $fz-4;
+    @extend %heading;
+}
+
+h5, .h5 {
+    font-size: $fz-5;
+    @extend %heading;
+}
+
+h6, .h6 {
+    font-size: $fz-6;
+    @extend %heading;
+}
+
+
+
+
+
+// MODIFICATORS
+
+.bigger {
+    
+}
+
+.smaller {
+
+}
+
+.fz-xs {
+    
+}
+
+.fz-sm {
+
+}
+
+.fz-md {
+
+}
+
+.fz-lg {
+
+}
+
+.fz-xl {
+
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+
+
+
+
+.paragraph {
+    line-height: 1.45;
+
+    p {
+        margin: 0;
+        margin-bottom: 1em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.paragraph-large {
+    font-size: $fz-lg;
+    line-height: 1.5;
+}

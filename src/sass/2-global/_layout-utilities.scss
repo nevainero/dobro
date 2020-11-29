@@ -1,0 +1,194 @@
+.full-width,
+.w-100,
+.w-full {
+	width: 100%;
+}
+.full-height,
+.h-100,
+.h-full {
+	height: 100%;
+}
+
+@media screen and (min-width: 576px){
+	.full-width-sm {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.full-width-md {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.full-width-lg {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.full-width-xl {
+		width: 100%;
+	}
+}
+
+
+
+.pos-r,
+.relative {
+	position: relative;
+}
+
+.pos-a,
+.absolute {
+	position: absolute;
+}
+
+.pos-s,
+.static {
+	position: static;
+}
+
+
+
+.ov-h {
+	overflow: hidden;
+}
+
+
+
+@mixin util-loop($size, $mult, $class_prefix, $class_suffix, $prop1, $prop2){
+	@for $i from 11 through 1 {
+  
+	  #{$class_prefix}#{$class_suffix}{
+		  #{$prop1}: $size;
+		  @if $prop2 {
+			 #{$prop2}: $size;
+		  }
+	  }
+  
+	  $size: $size + $mult;
+	  $class_suffix: $class_suffix + $mult;
+  
+	}
+  }
+  
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.p-', $class_suffix: 0, $prop1: 'padding', $prop2: false);
+  
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.py-', $class_suffix: 0, $prop1: 'padding-top', $prop2: 'padding-bottom');
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.px-', $class_suffix: 0, $prop1: 'padding-right', $prop2: 'padding-left');
+  
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pt-', $class_suffix: 0, $prop1: 'padding-top', $prop2: false);
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pr-', $class_suffix: 0, $prop1: 'padding-right', $prop2: false);
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pl-', $class_suffix: 0, $prop1: 'padding-left', $prop2: false);
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pb-', $class_suffix: 0, $prop1: 'padding-bottom', $prop2: false);
+  
+  
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.m-', $class_suffix: 0, $prop1: 'margin', $prop2: false);
+  
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.my-', $class_suffix: 0, $prop1: 'margin-top', $prop2: 'margin-bottom');
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mx-', $class_suffix: 0, $prop1: 'margin-right', $prop2: 'margin-left');
+  
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mt-', $class_suffix: 0, $prop1: 'margin-top', $prop2: false);
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mr-', $class_suffix: 0, $prop1: 'margin-right', $prop2: false);
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mb-', $class_suffix: 0, $prop1: 'margin-bottom', $prop2: false);
+  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.ml-', $class_suffix: 0, $prop1: 'margin-left', $prop2: false);
+  
+  
+  @media screen and (min-width: 576px){
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.p-sm-', $class_suffix: 0, $prop1: 'padding', $prop2: false);
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.py-sm-', $class_suffix: 0, $prop1: 'padding-top', $prop2: 'padding-bottom');
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.px-sm-', $class_suffix: 0, $prop1: 'padding-right', $prop2: 'padding-left');
+	  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pt-sm-', $class_suffix: 0, $prop1: 'padding-top', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pr-sm-', $class_suffix: 0, $prop1: 'padding-right', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pl-sm-', $class_suffix: 0, $prop1: 'padding-left', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pb-sm-', $class_suffix: 0, $prop1: 'padding-bottom', $prop2: false);
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.m-sm-', $class_suffix: 0, $prop1: 'margin', $prop2: false);
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.my-sm-', $class_suffix: 0, $prop1: 'margin-top', $prop2: 'margin-bottom');
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mx-sm-', $class_suffix: 0, $prop1: 'margin-right', $prop2: 'margin-left');
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mt-sm-', $class_suffix: 0, $prop1: 'margin-top', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mr-sm-', $class_suffix: 0, $prop1: 'margin-right', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mb-sm-', $class_suffix: 0, $prop1: 'margin-bottom', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.ml-sm-', $class_suffix: 0, $prop1: 'margin-left', $prop2: false);
+  
+  }
+  
+  @media screen and (min-width: 768px){
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.p-md-', $class_suffix: 0, $prop1: 'padding', $prop2: false);
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.py-md-', $class_suffix: 0, $prop1: 'padding-top', $prop2: 'padding-bottom');
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.px-md-', $class_suffix: 0, $prop1: 'padding-right', $prop2: 'padding-left');
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pt-md-', $class_suffix: 0, $prop1: 'padding-top', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pr-md-', $class_suffix: 0, $prop1: 'padding-right', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pb-md-', $class_suffix: 0, $prop1: 'padding-bottom', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pl-md-', $class_suffix: 0, $prop1: 'padding-left', $prop2: false);
+	  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.m-md-', $class_suffix: 0, $prop1: 'margin', $prop2: false);
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.my-md-', $class_suffix: 0, $prop1: 'margin-top', $prop2: 'margin-bottom');
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mx-md-', $class_suffix: 0, $prop1: 'margin-right', $prop2: 'margin-left');
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mt-md-', $class_suffix: 0, $prop1: 'margin-top', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mr-md-', $class_suffix: 0, $prop1: 'margin-right', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mb-md-', $class_suffix: 0, $prop1: 'margin-bottom', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.ml-md-', $class_suffix: 0, $prop1: 'margin-left', $prop2: false);
+  
+  }
+  
+  @media screen and (min-width: 992px){
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.p-lg-', $class_suffix: 0, $prop1: 'padding', $prop2: false);
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.py-lg-', $class_suffix: 0, $prop1: 'padding-top', $prop2: 'padding-bottom');
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.px-lg-', $class_suffix: 0, $prop1: 'padding-right', $prop2: 'padding-left');
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pt-lg-', $class_suffix: 0, $prop1: 'padding-top', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pb-lg-', $class_suffix: 0, $prop1: 'padding-bottom', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pr-lg-', $class_suffix: 0, $prop1: 'padding-right', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pl-lg-', $class_suffix: 0, $prop1: 'padding-left', $prop2: false);
+	  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.m-lg-', $class_suffix: 0, $prop1: 'margin', $prop2: false);
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.my-lg-', $class_suffix: 0, $prop1: 'margin-top', $prop2: 'margin-bottom');
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mx-lg-', $class_suffix: 0, $prop1: 'margin-right', $prop2: 'margin-left');
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mt-lg-', $class_suffix: 0, $prop1: 'margin-top', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mr-lg-', $class_suffix: 0, $prop1: 'margin-right', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mb-lg-', $class_suffix: 0, $prop1: 'margin-bottom', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.ml-lg-', $class_suffix: 0, $prop1: 'margin-left', $prop2: false);
+  
+  }
+  
+  @media screen and (min-width: 1200px){
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.p-xl-', $class_suffix: 0, $prop1: 'padding', $prop2: false);
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.py-xl-', $class_suffix: 0, $prop1: 'padding-top', $prop2: 'padding-bottom');
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.px-xl-', $class_suffix: 0, $prop1: 'padding-right', $prop2: 'padding-left');
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pt-xl-', $class_suffix: 0, $prop1: 'padding-top', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pr-xl-', $class_suffix: 0, $prop1: 'padding-right', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pb-xl-', $class_suffix: 0, $prop1: 'padding-bottom', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.pl-xl-', $class_suffix: 0, $prop1: 'padding-left', $prop2: false);
+	  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.m-xl-', $class_suffix: 0, $prop1: 'margin', $prop2: false);
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.my-xl-', $class_suffix: 0, $prop1: 'margin-top', $prop2: 'margin-bottom');
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mx-xl-', $class_suffix: 0, $prop1: 'margin-right', $prop2: 'margin-left');
+  
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mt-xl-', $class_suffix: 0, $prop1: 'margin-top', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mr-xl-', $class_suffix: 0, $prop1: 'margin-right', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.mb-xl-', $class_suffix: 0, $prop1: 'margin-bottom', $prop2: false);
+	  @include util-loop($size: 0px, $mult: 10, $class_prefix: '.ml-xl-', $class_suffix: 0, $prop1: 'margin-left', $prop2: false);
+  
+  }
+  

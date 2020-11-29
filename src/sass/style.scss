@@ -1,0 +1,117 @@
+/* Theme Name: Ae */
+
+
+// VARIABLES AND MIXINS
+
+@import 'vars';
+@import './0-mixins/fontface';
+@import './0-mixins/hide-scrollbar';
+@import './0-mixins/input-placeholder';
+
+
+
+// BOOTSTRAP'S FUNCTIONS
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$container-max-widths: (
+	sm: 100%,
+	md: 100%,
+	lg: 100%,
+	xl: 1230px,
+);
+
+
+
+
+
+
+
+@include font-face('Gotham Pro', 'assets/fonts/GothamPro/GothamProBlack', 900, normal, eot woff ttf);
+@include font-face('Gotham Pro', 'assets/fonts/GothamPro/GothamProBlackItalic', 900, italic, eot woff ttf);
+
+@include font-face('Gotham Pro', 'assets/fonts/GothamPro/GothamProBold', bold, normal, eot woff ttf);
+@include font-face('Gotham Pro', 'assets/fonts/GothamPro/GothamProBoldItalic', bold, italic, eot woff ttf);
+
+@include font-face('Gotham Pro', 'assets/fonts/GothamPro/GothamProRegular', normal, normal, eot woff ttf);
+@include font-face('Gotham Pro', 'assets/fonts/GothamPro/GothamProItalic', normal, italic, eot woff ttf);
+
+@include font-face('Gotham Pro', 'assets/fonts/GothamPro/GothamProLight', 300, normal, eot woff ttf);
+@include font-face('Gotham Pro', 'assets/fonts/GothamPro/GothamProLightItalic', 300, italic, eot woff ttf);
+
+@include font-face('Gotham Pro', 'assets/fonts/GothamPro/GothamProMedium', 600, normal, eot woff ttf);
+@include font-face('Gotham Pro', 'assets/fonts/GothamPro/GothamProMediumItalic', 600, italic, eot woff ttf);
+
+
+
+
+// RESET CSS
+
+@import '2-global/reset';
+
+
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: $ff-basic;
+	font-size: $fz-md;
+	color: $color-black;
+
+	max-width: 100vw;
+	overflow-x: hidden;
+
+	transition: $trans-n-medium;
+}
+
+a {
+	text-decoration: none;
+	color: $color-primary;
+
+	// transition: $trans-fast;
+
+	&:hover, &:focus {
+		outline: none;
+		text-decoration: none;
+		// color: $color-purple;	
+	}
+}
+
+
+
+// BOOTSTRAP COMPONENTS
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/utilities/display"; // d-flex, d-block etc.
+@import "node_modules/bootstrap/scss/utilities/flex"; // Alignments and stuff
+
+
+
+
+// SETUP
+@import '2-global/layout-utilities';
+@import '2-global/type';
+
+@import '2-global/buttons';
+@import '2-global/dividers';
+
+
+
+// COMPONENTS
+
+@import '2-global/cinfo';
+@import '2-global/social-icons';
+
+@import '2-global/header';
+@import '2-global/footer';
+
+
+
+// PAGES AND TEMPLATES
+@import '3-templates/homepage';
+
+

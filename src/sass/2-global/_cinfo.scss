@@ -1,0 +1,20 @@
+.cinfo {
+
+}
+
+.cinfo-label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fz-xs;
+    line-height: 1.2;
+    
+    
+    color: #FFFFFF;
+}
+
+.cinfo-value {
+    font-size: $fz-md;
+
+    display: block;
+    margin-top: 10px;
+}
