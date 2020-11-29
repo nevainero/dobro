@@ -1,6 +1,7 @@
 This project uses Gulp 4 and Sass.
 
-The source files can be found in `/src/` folder. Javascript files are concatenated during build, the partials that will be concatenated must be located in `/src/js/` and added to `filesToConcat` array in `gulpfile.js`.
+The source files can be found in `/src/` folder. 
+Javascript files are bundled using Rollup and Babel.
 
 # How to use:
 
