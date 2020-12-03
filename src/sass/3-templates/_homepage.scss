@@ -2,3 +2,122 @@ body.home {
     background: url(assets/img/home-top.png) no-repeat center top;
     background-size: contain;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.block1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 180px;
+
+    .text-block {
+        width: 50%;
+        padding-right: 40px;
+
+        .title {
+            font-family: $ff-gotham;
+            font-weight: 600;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .text {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 73px;
+        }
+
+        .button {
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width:765px) {
+    .block1 {
+        flex-direction: column-reverse;
+        margin-bottom: 80px;
+
+        .text-block {
+            text-align: center;
+            width: 100%;
+            padding-right: 0;
+
+            .title {
+                font-size: 28px;
+            }
+
+            .button {
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+.block2 {
+    display: flex;
+    text-align: center;
+    font-family: Inter;
+    margin-bottom: 180px;
+
+    .item {
+        padding-right: 20px;
+        padding-left: 20px;
+
+        .logo {
+            height: 80px;
+            margin-bottom: 60px;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .text {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (max-width:765px) {
+    .block2 {
+        flex-direction: column-reverse;
+        margin-bottom: 80px;
+
+        .item {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.block3 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 180px;
+
+    .text {
+        margin-right: 50px;
+        font-size: 17px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width:765px) {
+    .block3 {
+        margin-bottom: 80px;
+        flex-direction: column-reverse;
+
+        .text {
+            margin-right: 0;
+            padding: 20px;
+        }
+    }
+}
