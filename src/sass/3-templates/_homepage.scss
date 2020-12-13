@@ -1,25 +1,14 @@
 body.home {
     background: url(assets/img/home-top.png) no-repeat center top;
     background-size: contain;
+    background-position-y: -100px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-.home {
-    background-image: url('./assets/img/background-line-1.png') !important;
-    background-position-y: -60px !important;
-}
-
-@media (max-width:1000px) {
-    .home {
-        background-image: none !important;
-    }
-}
-
 .block1 {
     display: flex;
     align-items: center;
-    margin-bottom: 180px;
 
     .text-block {
         width: 50%;
@@ -46,10 +35,10 @@ body.home {
     }
 }
 
-@media (max-width:1000px) {
+@media (max-width: 992px) {
     .block1 {
         flex-direction: column-reverse;
-        margin-bottom: 80px;
+        margin-bottom: 100px;
 
         .text-block {
             text-align: center;
@@ -68,6 +57,8 @@ body.home {
 
     }
 }
+
+// ==============================   BLOCK 2   ==============================
 
 .block2 {
     display: flex;
@@ -97,10 +88,10 @@ body.home {
     }
 }
 
-@media (max-width:765px) {
+@media (max-width: 992px) {
     .block2 {
         flex-direction: column-reverse;
-        margin-bottom: 80px;
+        margin-bottom: 100px;
 
         .item {
             margin-bottom: 50px;
@@ -108,17 +99,13 @@ body.home {
     }
 }
 
-@media (max-width:765px) {
-    .block2 {
-        height: auto;
-    }
-}
+// ==============================   BLOCK 3   ==============================
 
 .block3 {
     display: flex;
     align-items: center;
     position: relative;
-    margin-bottom: 180px;
+    margin-bottom: 150px;
 
     .text {
         margin-right: 50px;
@@ -129,8 +116,12 @@ body.home {
 
 @media (max-width:1250px) {
     .block3 {
-        margin-bottom: 80px;
+        margin-bottom: 100px;
         flex-direction: column-reverse;
+
+        .photo {
+            margin-bottom: 15px;
+        }
 
         .text {
             margin-right: 0;
@@ -139,13 +130,15 @@ body.home {
     }
 }
 
+// ==============================   BLOCK 4   ==============================
+
 .block4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
     font-weight: 400;
-    margin-bottom: 180px;
+    margin-bottom: 135px;
 
     .title {
         width: 100%;
@@ -192,7 +185,7 @@ body.home {
     }
 }
 
-@media (max-width:1000px) {
+@media (max-width:992px) {
     .block4 {
         .item {
             width: 45%;
@@ -200,9 +193,9 @@ body.home {
     }
 }
 
-@media (max-width:700px) {
+@media (max-width:768px) {
     .block4 {
-        margin-bottom: 80px;
+        margin-bottom: 100px;
 
         .item {
             width: 100%;
@@ -210,4 +203,323 @@ body.home {
     }
 }
 
-.block5 {}
+// ==============================   BLOCK 5   ==============================
+
+.block5-wrap {
+    background: rgba(60, 134, 244, 0.15);
+    border-radius: 14px;
+    margin: 0 40px;
+    margin-bottom: 90px;
+}
+
+.block5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .main-title {
+        display: inline;
+        width: 100%;
+        font-size: 32px;
+        text-transform: uppercase;
+        font-weight: 900;
+        position: relative;
+        left: 40px;
+        bottom: 22px;
+    }
+
+    .item {
+        width: 31%;
+        margin-bottom: 55px;
+
+        .img {
+            margin-bottom: 30px;
+        }
+
+        .title-flex {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 25px;
+
+            .title {
+                font-family: Inter;
+                font-weight: 700;
+                font-size: 18px;
+            }
+
+            #block4-title-1 {
+                min-width: 165px;
+            }
+
+            #block4-title-2 {
+                min-width: 230px;
+            }
+
+            .arrow-wrap {
+                max-width: 100%;
+
+                .arrow {
+                    min-height: 24px;
+                }
+            }
+        }
+
+        .text {
+            font-family: Inter;
+            font-size: 16px;
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .block5-wrap {
+        padding: 20px;
+        margin: 0 20px;
+        margin-bottom: 100px;
+    }
+
+    .block5 {
+        .main-title {
+            left: 40px;
+            bottom: 42px;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .block5 {
+        flex-direction: column;
+
+        .main-title {
+            left: 00px;
+            font-size: 27px;
+            bottom: 39px;
+        }
+
+        .item {
+            width: 100%;
+
+            .arrow {
+                display: none;
+            }
+        }
+    }
+}
+
+// ==============================   BLOCK 6   ==============================
+
+.block6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 120px;
+
+    .title {
+        width: 100%;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 80px;
+    }
+
+    .item {
+        margin: 0 70px;
+
+        .num {
+            font-size: 48px;
+            font-weight: 700;
+            color: #3C86F4;
+            margin-bottom: 35px;
+        }
+
+        .text {
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .block6 {
+        margin-bottom: 80px;
+
+        .title {
+            margin-bottom: 60px;
+        }
+
+        .item {
+            width: 100%;
+            margin-bottom: 40px;
+
+            .num {
+                margin-bottom: 15px;
+            }
+
+        }
+    }
+}
+
+// ==============================   BLOCK 7   ==============================
+
+.block7-wrap {
+    background-color: #26D193;
+    padding-top: 70px;
+    padding-bottom: 60px;
+
+    .top-block {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 36px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 85px;
+
+        .arrow-btns {
+            margin-top: 5px;
+
+            .arrow {
+                margin-left: 25px;
+                padding: 10px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .main-block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .item {
+            width: 49%;
+            background-color: white;
+            border-radius: 8px;
+            padding: 0 30px 30px;
+            min-height: 335px;
+            transition: 1s;
+
+            .name {
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+
+            .photo {
+                position: relative;
+                top: -20px;
+            }
+
+            .text {
+                line-height: 26px;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+
+    .block7-wrap {
+        padding-top: 40px;
+    }
+
+    .block7 {
+        .top-block {
+            flex-direction: column;
+            margin-bottom: 40px;
+
+            .title {
+                text-align: center;
+                font-size: 28px;
+            }
+
+            .arrow-btns {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-evenly;
+
+                .arrow {
+                    margin: 0;
+                }
+            }
+        }
+
+        .main-block {
+            .item {
+                width: 100%;
+                min-height: 441px;
+            }
+        }
+    }
+}
+
+// ==============================   BLOCK APP 1   ==============================
+
+.block-app-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+
+    .phone-wrap {
+        width: 50%;
+        text-align: center;
+    }
+
+    .text-block {
+        td.num {
+            font-family: Inter;
+            font-weight: 700;
+            font-size: 20px;
+            color: #3C86F4;
+        }
+
+        td {
+            padding-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .gp {
+            width: 60%;
+            margin-left: 20%;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .block-app-1 {
+        flex-wrap: wrap;
+
+        .phone-wrap {
+            width: 100%;
+        }
+
+        .text-block {
+            .gp {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.block-app-2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 90px;
+    margin-bottom: 70px;
+
+    .gp {
+        max-width: 400px;
+    }
+}

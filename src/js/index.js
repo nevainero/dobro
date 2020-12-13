@@ -1,1 +1,2 @@
-require('./menu-hamburger');
+require('./menu-hamburger')
+require('./slider')
