@@ -15,7 +15,7 @@
 
 <div class="block-app-1 container">
   <p class="phone-wrap">
-    <img src="./assets/img/phone.png" alt="" class="phone">
+    <img src="./assets/img/phone.png" alt="" class="phone" />
   </p>
   <div class="text-block">
     <table>
@@ -29,10 +29,12 @@
       </tr>
       <tr>
         <td class="num">3.</td>
-        <td class="text">Подайте заявку на помощь и ждите пока с вами свяжутся волонтеры</td>
+        <td class="text">
+          Подайте заявку на помощь и ждите пока с вами свяжутся волонтеры
+        </td>
       </tr>
     </table>
-    <img src="./assets/img/google-play-badge.png" alt="" class="gp">
+    <img src="./assets/img/google-play-badge.png" alt="" class="gp" />
   </div>
 </div>
 
@@ -253,5 +255,47 @@
 
 <div class="block-app-2 container">
   <p class="title">Скачать приложение</p>
-  <img src="./assets/img/google-play-badge.png" alt="" class="gp">
+  <img src="./assets/img/google-play-badge.png" alt="" class="gp" />
+</div>
+
+<div class="modal-wrapper"></div>
+<div class="modal-auth">
+  <div class="exit">
+    <img src="./assets/img/exit-modal.svg" alt="" />
+  </div>
+  <h2 class="title">Вход</h2>
+  <div class="input-wrapper">
+    <input
+      id="input-num"
+      type="number"
+      placeholder="Номер телефона"
+      onkeypress="if(this.value.length > 10) return false;"
+    />
+  </div>
+  <div class="btn-enter-1">
+    <img src="./assets/img/arrow-next-modal.png" alt="" />
+  </div>
+</div>
+
+<div class="modal-auth-step-2">
+  <div class="exit">
+    <img src="./assets/img/exit-modal.svg" alt="" />
+  </div>
+  <h2 class="title">Вход</h2>
+  <div class="subtitle">Проверяем номер телефона</div>
+  <div class="text">
+    Введите последние 4 цифры номера, с которого был совершён вызов на ваш номер
+    телефона
+  </div>
+  <div class="input-wrapper">
+    <input
+      id="input-code"
+      type="number"
+      placeholder="Код"
+      onkeypress="if(this.value.length > 3) return false;"
+    />
+  </div>
+  <div class="btn-enter-2">
+    <img src="./assets/img/arrow-next-modal.png" alt="" />
+  </div>
 </div>
