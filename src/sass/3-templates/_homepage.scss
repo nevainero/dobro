@@ -535,18 +535,9 @@ body.home {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.modal-auth {
-    font-family: $ff-gotham;
-    position: fixed;
-    display: none;
-    z-index: 99999;
-    color: #000;
-    background: #FFF;
-    border-radius: 14px;
+.modal-auth-1 {
     width: 600px;
     height: 400px;
-    left: 50%;
-    top: 50%;
     margin-left: -300px;
     margin-top: -200px;
 
@@ -560,7 +551,7 @@ body.home {
         width: 100%;
         margin-bottom: 60px;
 
-        input {
+        #input-num {
             width: 50%;
             margin-left: 25%;
             border: 2px solid #DCDEE2;
@@ -592,19 +583,9 @@ body.home {
     }
 }
 
-.modal-auth-step-2 {
-    display: none;
-    font-family: $ff-gotham;
-    position: fixed;
-    display: none;
-    z-index: 99999;
-    color: #000;
-    background: #FFF;
-    border-radius: 14px;
+.modal-auth-2 {
     width: 600px;
     height: 540px;
-    left: 50%;
-    top: 50%;
     margin-left: -300px;
     margin-top: -270px;
 
@@ -662,18 +643,14 @@ body.home {
     }
 }
 
-.modal-active {
-    display: block !important;
-}
-
 @media (max-width:768px) {
-    .modal-auth {
+    .modal-auth-1 {
         width: 400px;
         left: 50%;
         margin-left: -200px;
     }
 
-    .modal-auth-step-2 {
+    .modal-auth-2 {
         width: 400px;
         left: 50%;
         margin-left: -200px;
