@@ -20,6 +20,10 @@
       border: 2px solid #DCDEE2;
       border-radius: 6px;
       padding: 17px 20px;
+
+      &:focus {
+        outline-color: #3C86F4;
+      }
     }
   }
 
@@ -68,6 +72,10 @@
       border: 2px solid #DCDEE2;
       border-radius: 6px;
       padding: 17px 20px;
+
+      &:focus {
+        outline-color: #3C86F4;
+      }
     }
   }
 

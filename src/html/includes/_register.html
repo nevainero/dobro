@@ -1,4 +1,4 @@
-<div class="register-choise disabled-block">
+<div class="register-choise register-block">
   <div class="title">Регистрация</div>
   <div class="choise-block needy-block">
     <img class="choise-img needy" src="./assets/img/needy.svg" alt="" />
@@ -15,24 +15,64 @@
     onkeypress="if(this.value.length > 10) return false;"
   />
   <div class="btn-enter">
-    <div class="text">Продолжить</div>
+    <div class="btn-text">Продолжить</div>
     <img class="arrow-img" src="./assets/img/arrow-next-register.svg" alt="" />
   </div>
 </div>
 
-<div class="register-check-code">
+<div class="register-check-code disabled-block register-block">
   <div class="title">Регистрация</div>
   <div class="subtitle">Проверяем номер телефона</div>
   <div class="text">
     Введите последние 4 цифры номера, с которого был совершён вызов на ваш номер
     телефона
   </div>
-  <div class="input-wrapper">
-    <input
-      class="input-code"
-      type="number"
-      placeholder="Код"
-      onkeypress="if(this.value.length > 3) return false;"
-    />
+  <input
+    class="input-code"
+    type="number"
+    placeholder="Код"
+    onkeypress="if(this.value.length > 3) return false;"
+  />
+  <div class="help">Мне не позвонили</div>
+  <div class="btn-enter">
+    <div class="btn-text">Продолжить</div>
+    <img class="arrow-img" src="./assets/img/arrow-next-register.svg" alt="" />
+  </div>
+</div>
+
+<div class="register-form register-block disabled-block">
+  <div class="title">Регистрация</div>
+  <form class="form">
+    <input class="input" type="text" id="surname" placeholder="Фамилия *" />
+    <input class="input" type="text" id="name" placeholder="Имя *" />
+    <input class="input" type="text" id="patronymic" placeholder="Отчество" />
+    <input class="input" type="email" id="email" placeholder="Email *" />
+    <input class="input" type="text" id="city" placeholder="Город *" />
+
+    <div class="checkbox">
+      <input
+        class="custom-checkbox"
+        type="checkbox"
+        id="check1"
+        name="check1"
+        value="check1"
+      />
+      <label for="check1">Согласен с политикой конфиденциальности</label>
+    </div>
+    <div class="checkbox">
+      <input
+        class="custom-checkbox"
+        type="checkbox"
+        id="check2"
+        name="check2"
+        value="check2"
+      />
+      <label for="check2">Согласен с условиями сервиса</label>
+    </div>
+  </form>
+
+  <div class="btn-enter">
+    <div class="btn-text">Продолжить</div>
+    <img class="arrow-img" src="./assets/img/arrow-next-register.svg" alt="" />
   </div>
 </div>
