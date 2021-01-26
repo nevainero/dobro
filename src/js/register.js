@@ -3,7 +3,7 @@ $('.register-choise .input-num').on('input', function (event) {
   checkValidation()
 })
 
-
+// Выбор роли пользователя
 $('.volunteer-block').on('click', function () {
   $('.volunteer-block').addClass('choise-block-active')
   $('.needy-block').removeClass('choise-block-active')
@@ -16,6 +16,7 @@ $('.needy-block').on('click', function () {
   checkValidation()
 })
 
+// Валидация номера телефона и проверка на сделанный выбор роли
 function checkValidation () {
   const length = $('.register-choise .input-num').val().length
   const isChoise =
@@ -28,3 +29,14 @@ function checkValidation () {
     $('.btn-enter').removeClass('btn-enter-active')
   }
 }
+
+$('.register-choise .btn-enter').on('click', function () {
+  const isActive = $('.register-choise .btn-enter').hasClass(
+    'btn-enter-active'
+  )
+  console.log(isActive)
+  if (isActive) {
+    $('.register-choise').addClass('disabled-block')
+    $('.register-check-code').removeClass('disabled-block')
+  }
+})

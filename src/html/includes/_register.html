@@ -1,11 +1,11 @@
-<div class="register-choise">
+<div class="register-choise disabled-block">
   <div class="title">Регистрация</div>
   <div class="choise-block needy-block">
-    <img class='choise-img needy' src="./assets/img/needy.svg" alt="" />
+    <img class="choise-img needy" src="./assets/img/needy.svg" alt="" />
     <div class="text">Мне нужна помощь</div>
   </div>
   <div class="choise-block volunteer-block">
-    <img class='choise-img volunteer' src="./assets/img/volunteer.svg" alt="" />
+    <img class="choise-img volunteer" src="./assets/img/volunteer.svg" alt="" />
     <div class="text">Я волонтёр</div>
   </div>
   <input
@@ -16,6 +16,23 @@
   />
   <div class="btn-enter">
     <div class="text">Продолжить</div>
-    <img class="arrow-img" src="./assets/img/arrow-next-register.svg" alt="">
+    <img class="arrow-img" src="./assets/img/arrow-next-register.svg" alt="" />
+  </div>
+</div>
+
+<div class="register-check-code">
+  <div class="title">Регистрация</div>
+  <div class="subtitle">Проверяем номер телефона</div>
+  <div class="text">
+    Введите последние 4 цифры номера, с которого был совершён вызов на ваш номер
+    телефона
+  </div>
+  <div class="input-wrapper">
+    <input
+      class="input-code"
+      type="number"
+      placeholder="Код"
+      onkeypress="if(this.value.length > 3) return false;"
+    />
   </div>
 </div>

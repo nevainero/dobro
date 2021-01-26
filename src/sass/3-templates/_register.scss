@@ -1,3 +1,7 @@
+.disabled-block {
+  display: none!important;
+}
+
 .register-choise {
   width: 600px;
   margin: 120px auto;
@@ -30,6 +34,7 @@
 
     .text {
       font-size: 18px;
+      text-align: center;
     }
 
     .choise-img {
@@ -94,5 +99,56 @@
   .btn-enter-active {
     background-color: #3C86F4;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-choise {
+    width: 90%;
+
+    .input-num {
+      width: 90%;
+    }
+
+    .choise-block {
+      width: 40%;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .register-choise {
+    .choise-block {
+      width: 90%;
+    }
+
+    .needy-block {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.register-check-code {
+  width: 600px;
+  margin: 120px auto;
+  border-radius: 0px 0px 14px 14px;
+  background-color: #F9FBFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .title {
+    width: 100%;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: -26px;
+    margin-bottom: 60px;
+  }
+
+  .subtitle {
+    font-weight: bold;
+    margin-bottom: 15px;
   }
 }
